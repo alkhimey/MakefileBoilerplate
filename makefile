@@ -118,7 +118,7 @@ dirs:
 # Compile all sources and generate dependency lists
 #
 $(OBJ_DIR)/%_$(SUFFIX).o: $(SRC_DIR)/%.cpp
-	g++ $(CC_FLAGS) -o $@ $<
+	$(CXX) $(CC_FLAGS) -o $@ $<
 
 # Include previously generated dependency lists.
 # First time build will build all sources anyway.
